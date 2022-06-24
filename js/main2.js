@@ -24,7 +24,7 @@ const setLoadAllCallback=(imgs,callback)=>{
     for(let i=0;i<imgs.length;i++){
         imgs[i].onload=()=>{
             ++count;
-            if(count==imgs.length){
+            if(count===imgs.length){
                 callback(imgs);
             }
         };
